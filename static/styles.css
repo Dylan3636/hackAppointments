@@ -1,0 +1,22 @@
+body{
+	background-color: gray;
+} 
+.header{
+	margin: 50px;
+	background-color: #0080ff;
+} 
+.main{
+	margin: 50px;
+	padding: 50px;
+}
+
+.col-lg-4{
+	border: solid gray 2px;
+	background-color: #6699ff;
+}
+ input{
+	vertical-align: middle;
+}
+.second-block .third-block{
+	float: right;
+}

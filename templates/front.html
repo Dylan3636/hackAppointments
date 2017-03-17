@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+	{% block body %}
+		Doctors:<br>
+		<div class="container">
+		{% for doc in docs %}
+			<row>
+				<div class="col-lg-4">
+					<p>{{doc.title}} {{doc.lname}} {{doc.name}}</p>
+					<p>{{doc.profession}}, {{doc.phone}}</p>
+				</div>
+			</row>
+		{% endfor %} 
+		</div> <br>
+		Add a doctor:<br><br>
+		<form class="container">
+			<row>
+				<div class="col-md-4">
+					Title: <br><input type="text" name="title"><br><br>
+					First name: <br><input type="text" name="fullname"><br><br>
+				</div>
+				<div class="col-md-4">
+					Last name:  <br><input type="text" name="lastname"><br><br>
+					Speciality: <br><input type="text" name="speciality"><br><br>
+				</div>
+				<div class="col-md-4">
+					Phone number: <br><input type="text" name="phonenum"><br><br>
+					Key words: <br><input type="text" name="keywords"><br><br>
+				</div>
+			</row>
+			<center><button type="submit">Add</button></center> 
+		</form>
+	{% endblock %}
